@@ -1,0 +1,251 @@
+/* GLOBAL */
+/* Global: CSS dùng chung cho toàn bộ website */
+* {
+    /* Giữa nguyên kích thước width của thẻ */
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #faf4f2;
+}
+
+.clear {
+    clear: both;
+}
+
+.header {
+    /* HEX rrggbb */
+    background-color: #f8e1db;
+    /* top bottom :10px right left :30 */
+    padding: 10px 30px;
+
+}
+
+.header .logo img {
+    width: 70px;
+}
+
+
+.header .navbar {
+    margin-top: 0px;
+}
+
+.header .navbar a {
+    color: black;
+
+    /* Thẻ a là thẻ inline không thêm trên dưới được
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through; */
+
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: normal;
+
+    /* margin-top: 20px; */
+}
+
+.header .navbar a:hover {
+    color: #e76f51;
+}
+
+
+/* CAROUSEL */
+.carousel {
+    height: 1200px;
+    background-image: url(../Images/BG.png);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center center;
+    /* background-size: 900px; */
+}
+
+
+
+
+/* ACTIVITIES */
+
+/* display : inline chỉ áp dụng cho nội  dung đơn giản (chứa 1 con hoặc 1 dòng chữ ngắn)  */
+/* float : giúp sắp xếp các khối nội dung, hỗ trợ mọi phiên bản trình duyệt, nhược điểm khó sử dụng */
+
+/* thẻ nào cần sắp xếp thì gọi thẻ float đó ra */
+/* xài float mà có ảnh nền thì chèn thêm 1 class */
+.activities {
+    text-align: center;
+}
+
+.col {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    /* border: 1px solid red; */
+}
+
+.thumnail {
+    position: relative;
+}
+
+.thumnail img {
+    width: 100%;
+    border-radius: 20px;
+    height: 300px;
+}
+
+.title {
+    margin: 50px 0px;
+}
+
+.item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.heart {
+    width: 40px;
+    height: 40px;
+
+    /* opacity độ trong suốt của thẻ (bao gồm toàn bộ  nội dung) */
+    /* giá trị từ 0->1 */
+    /* opacity: 0.5; */
+
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    display: block;
+    /* canh icon vô giữa theo chiều ngang */
+    text-align: center;
+    /* canh icon theo chiều dọc */
+    /* line height là khoảng cách giữa các dòng, nếu thẻ chỉ có 1 dòng chữ hoặc 1 ký tự thì canh line height gần bằng hoặc bằng height thì sẽ canh giữa theo chiều dọc  */
+    line-height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: red;
+}
+
+ 
+
+.viewAll button {
+    padding: 10px 60px;
+    border: 1px solid #e76f51;
+    background-color: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #e76f51;
+    margin: 40px 0 80px;
+}
+
+.readmore {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 50px;
+    margin: 30px 0px;
+    font-weight: 500px;
+    color: #bababa;
+}
+
+/* CONTACT */
+.contact {
+    background-color: #f8e1db;
+}
+
+.contact__left,
+.contact__right {
+    float: left;
+    width: 50%;
+}
+
+.contact__left img {
+    padding-left: 30px;
+}
+
+
+.contact__download,
+.contact__follow {
+    float: left;
+    width: 50%;
+}
+
+.small_item img {
+    width: 100%;
+}
+
+.contact__intro {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.contact__intro h2 {
+    padding-bottom: 15px;
+
+}
+
+.contact__download h2,
+.contact__follow h2 {
+    padding-bottom: 10px
+}
+
+.contact__follow i {
+    color: red;
+    font-size: 30px;
+}
+
+.fa-youtube,
+.fa-instagram {
+    margin: 0 10px;
+}
+
+/* FOOTER */
+.blank {
+    height: 200px;
+}
+
+.footer {
+    background-color: #f8e1db;
+    border-radius: 80px 80px 0 0;
+    line-height: 30px;
+    font-weight: 501;
+}
+
+.footer__main {
+    padding: 50px 40px;
+}
+
+.footer__left {
+    float: left;
+    width: 40%;
+    padding: 0 20px;
+}
+
+.footer__right {
+    float: left;
+    width: 60%;
+}
+
+.footer__content {
+    float: left;
+    width: 33.3%;
+}
+
+.footer__content ul li {
+    list-style: none;
+}
+
+.footer__left h2 {
+    padding-bottom: 15px;
+}
+
+.footer__right h2 {
+    padding-bottom: 15px;
+}
+
+.footer__copy p {
+    text-align: center;
+    padding: 0px 0px 50px;
+}
